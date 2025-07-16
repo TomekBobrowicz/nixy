@@ -21,7 +21,7 @@
     ../../home/programs/zen
     ../../home/programs/duckduckgo-colorscheme
     ../../home/programs/discord
-    ../../home/programs/tailscale
+    #../../home/programs/tailscale
     ../../home/programs/anyrun
 
     # Scripts
@@ -39,7 +39,7 @@
     ../../home/system/udiskie
     ../../home/system/clipman
 
-    ./secrets # CHANGEME: You should probably remove this line, this is where I store my secrets
+   # ./secrets # CHANGEME: You should probably remove this line, this is where I store my secrets
   ];
 
   home = {
@@ -61,6 +61,7 @@
       gnome-text-editor
       mpv # Video player
       figma-linux
+      google-chrome # Web browser
 
       # Dev
       go
