@@ -18,8 +18,8 @@
     ../../home/programs/nextcloud
     ../../home/programs/thunar
     ../../home/programs/lazygit
-    ../../home/programs/zen
-    ../../home/programs/duckduckgo-colorscheme
+    #../../home/programs/zen
+    #../../home/programs/duckduckgo-colorscheme
     ../../home/programs/discord
     #../../home/programs/tailscale
     ../../home/programs/anyrun
@@ -62,6 +62,8 @@
       mpv # Video player
       figma-linux
       google-chrome # Web browser
+      waypaper # Wallpaper manager
+      hyprpaper # Wallpaper manager
 
       # Dev
       go
@@ -89,7 +91,7 @@
       cmatrix
 
       # Backup
-      brave
+      #brave
       vscode
     ];
 

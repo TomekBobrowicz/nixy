@@ -3,12 +3,13 @@
     bind = [
       "$mod,RETURN, exec, uwsm app -- ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod,E, exec,  uwsm app -- ${pkgs.xfce.thunar}/bin/thunar" # Thunar
-      "$mod,B, exec,  uwsm app -- zen-beta" # Zen Browser
+      "$mod,B, exec,  uwsm app -- google-chrome" # Zen Browser
       "$mod,K, exec,  uwsm app -- ${pkgs.bitwarden}/bin/bitwarden" # Bitwarden
       "$mod,L, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
       "$mod,X, exec, powermenu" # Powermenu
       "$mod,SPACE, exec, menu" # Launcher
       "$mod,C, exec, quickmenu" # Quickmenu
+      "$mod,W, exec, waypaper" # Wallpaper manager
       "$shiftMod,SPACE, exec, hyprfocus-toggle" # Toggle HyprFocus
       # "$mod,P, exec,  uwsm app -- ${pkgs.planify}/bin/io.github.alainm23.planify" # Planify
 
