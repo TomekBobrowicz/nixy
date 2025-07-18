@@ -44,7 +44,7 @@
         nixpkgs.lib.nixosSystem {
           modules = [
             {
-              nixpkgs.overlays = [inputs.hyprpanel.overlay];
+              nixpkgs.overlays = [];
               _module.args = {inherit inputs;};
             }
             inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen1 # CHANGEME: check https://github.com/NixOS/nixos-hardware
@@ -53,6 +53,6 @@
             ./hosts/thinkpad/configuration.nix # CHANGEME: change the path to match your host folder
           ];
         };
-       };
+    };
   };
 }

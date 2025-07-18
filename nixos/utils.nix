@@ -1,5 +1,9 @@
-{ pkgs, config, inputs, ... }:
-let
+{
+  pkgs,
+  config,
+  inputs,
+  ...
+}: let
   hostname = config.var.hostname;
   keyboardLayout = config.var.keyboardLayout;
   configDir = config.var.configDirectory;
@@ -17,11 +21,11 @@ in {
     enable = autoUpgrade;
     dates = "04:00";
     flake = "${configDir}";
-    flags = [ "--update-input" "nixpkgs" "--commit-lock-file" ];
+    flags = ["--update-input" "nixpkgs" "--commit-lock-file"];
     allowReboot = false;
   };
 
-  time = { timeZone = timeZone; };
+  time = {timeZone = timeZone;};
   i18n.defaultLocale = defaultLocale;
   i18n.extraLocaleSettings = {
     LC_ADDRESS = extraLocale;
@@ -46,7 +50,18 @@ in {
       enable = true;
       resyncTimer = "10m";
     };
+    printing = {
+      enable = true;
+      drivers = [pkgs.hplipWithPlugin];
+    };
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+    };
+    ipp-usb.enable = true;
   };
+
   console.keyMap = keyboardLayout;
 
   environment.variables = {
@@ -64,7 +79,7 @@ in {
     dbus = {
       enable = true;
       implementation = "broker";
-      packages = with pkgs; [ gcr gnome-settings-daemon ];
+      packages = with pkgs; [gcr gnome-settings-daemon];
     };
     gvfs.enable = true;
     upower.enable = true;
@@ -73,7 +88,7 @@ in {
   };
 
   # enable zsh autocompletion for system packages (systemd, etc)
-  environment.pathsToLink = [ "/share/zsh" ];
+  environment.pathsToLink = ["/share/zsh"];
 
   # Faster rebuilding
   documentation = {
@@ -95,17 +110,21 @@ in {
     wget
     curl
     vim
+    alejandra
+    nixd
+    nix-prefetch-scripts
+    nurl
   ];
 
   xdg.portal = {
     enable = true;
     xdgOpenUsePortal = true;
     config = {
-      common.default = [ "gtk" ];
-      hyprland.default = [ "gtk" "hyprland" ];
+      common.default = ["gtk"];
+      hyprland.default = ["gtk" "hyprland"];
     };
 
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = [pkgs.xdg-desktop-portal-gtk];
   };
 
   security = {

@@ -84,8 +84,8 @@
 
     polarity = "dark";
     image = pkgs.fetchurl {
-      url = "https://raw.githubusercontent.com/orangci/walls-catppuccin-mocha/master/cat-vibin.png";
-      sha256 = "sha256-Hg27Gp4JBrYIC5B1Uaz8QkUskwD3pBhgEwE1FW7VBYo=";
+      url = "https://raw.githubusercontent.com/orangci/walls-catppuccin-mocha/master/street.png";
+      sha256 = "sha256-xSx87bFMgwMkYKiqflXoSmjMiyOBPdKwAPI0lGOeOFI=";
     };
   };
 }
