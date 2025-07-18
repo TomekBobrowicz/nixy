@@ -18,6 +18,10 @@
     nixarr.url = "github:rasmus-kirk/nixarr";
     anyrun.url = "github:fufexan/anyrun/launch-prefix";
     nvf.url = "github:notashelf/nvf";
+    hourglass = {
+      url = "gitlab:Alxhr0/hourglass";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

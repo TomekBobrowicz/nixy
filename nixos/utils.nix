@@ -112,8 +112,7 @@ in {
     vim
     alejandra
     nixd
-    nix-prefetch-scripts
-    nurl
+    (callPackage ../packages/hourglass {})
   ];
 
   xdg.portal = {
