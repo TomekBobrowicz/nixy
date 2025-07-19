@@ -9,7 +9,7 @@
   ];
 
   config.var = {
-    hostname = "thinkpad";
+    hostname = "darkside";
     username = "buber";
     configDirectory =
       "/home/"
