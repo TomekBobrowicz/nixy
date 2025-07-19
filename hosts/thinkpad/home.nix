@@ -68,7 +68,7 @@
       # Dev
       go
       bun
-      nodejs
+      #nodejs
       python3
       jq
       just
