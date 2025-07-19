@@ -112,7 +112,7 @@ in {
     vim
     alejandra
     nixd
-    (callPackage ../packages/hourglass {})
+    #(callPackage ../packages/hourglass {})
   ];
 
   xdg.portal = {
