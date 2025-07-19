@@ -71,6 +71,7 @@ in {
     TERMINAL = "kitty";
     TERM = "kitty";
     BROWSER = "zen-beta";
+    NH_OS_FLAKE = "${configDir}";
   };
 
   services.libinput.enable = true;
@@ -99,6 +100,14 @@ in {
     info.enable = false;
     nixos.enable = false;
   };
+  programs.nh = {
+    enable = true;
+    clean = {
+      enable = false;
+      extraArgs = "--keep-since 7d --keep 5";
+    };
+    flake = "/$HOME/.config/nixos";
+  };
 
   environment.systemPackages = with pkgs; [
     hyprland-qtutils
@@ -112,6 +121,8 @@ in {
     vim
     alejandra
     nixd
+    nix-output-monitor
+    nvd
     (callPackage ../packages/hourglass {})
   ];
 

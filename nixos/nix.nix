@@ -1,26 +1,35 @@
-{ config, inputs, ... }:
-let autoGarbageCollector = config.var.autoGarbageCollector;
+{
+  config,
+  inputs,
+  ...
+}: let
+  autoGarbageCollector = config.var.autoGarbageCollector;
 in {
-  security.sudo.extraRules = [{
-    users = [ config.var.username ];
-    commands = [{
-      command = "/run/current-system/sw/bin/nixos-rebuild";
-      options = [ "NOPASSWD" ];
-    }];
-  }];
+  security.sudo.extraRules = [
+    {
+      users = [config.var.username];
+      commands = [
+        {
+          command = "/run/current-system/sw/bin/nixos-rebuild";
+          options = ["NOPASSWD"];
+        }
+      ];
+    }
+  ];
   nixpkgs.config = {
     allowUnfree = true;
     allowBroken = true;
   };
   nix = {
-    nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+    nixPath = ["nixpkgs=${inputs.nixpkgs}"];
     channel.enable = false;
     extraOptions = ''
       warn-dirty = false
     '';
     settings = {
+      download-buffer-size = 262144000; # 250 MB (250 * 1024 * 1024)
       auto-optimise-store = true;
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = ["nix-command" "flakes"];
       substituters = [
         # high priority since it's almost always used
         "https://cache.nixos.org?priority=10"
