@@ -121,9 +121,13 @@ in {
     vim
     alejandra
     nixd
+<<<<<<< HEAD
     nix-output-monitor
     nvd
     (callPackage ../packages/hourglass {})
+=======
+    #(callPackage ../packages/hourglass {})
+>>>>>>> b7ce748e61c3db27af5a948593cb4894e702a32b
   ];
 
   xdg.portal = {
