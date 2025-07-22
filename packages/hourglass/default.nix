@@ -5,7 +5,7 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "hourglass";
-  version = "1.3";
+  version = "1.3.1";
 
   src = fetchFromGitLab {
     owner = "alxhr0";
