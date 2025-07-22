@@ -123,7 +123,7 @@ in {
     nixd
     nix-output-monitor
     nvd
-    #(callPackage ../packages/hourglass {})
+    (callPackage ../packages/hourglass {})
   ];
 
   xdg.portal = {

@@ -40,6 +40,12 @@
           keyColor = "32";
         }
         {
+          type = "command";
+          key = " ├  ";
+          keyColor = "32";
+          text = "hourglass";
+        }
+        {
           type = "shell";
           key = " └  ";
           keyColor = "32";
