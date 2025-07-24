@@ -13,6 +13,7 @@
         "$mod,D, exec, Discord" # Discord
         "$mod,W, exec, waypaper" # Wallpaper manager
         "$shiftMod,SPACE, exec, hyprfocus-toggle" # Toggle HyprFocus
+        "$mod ALT, W, exec,waypaper --random --folder ~/Pictures/Wallpapers" # Random wallpaper chooser
         # "$mod,P, exec,  uwsm app -- ${pkgs.planify}/bin/io.github.alainm23.planify" # Planify
 
         "$mod,Q, killactive," # Close window
