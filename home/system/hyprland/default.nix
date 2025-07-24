@@ -67,6 +67,7 @@ in {
       exec-once = [
         "dbus-update-activation-environment --systemd --all &"
         "systemctl --user enable --now hypridle.service &"
+        "systemctl --user enable --now hyprpaper.service &"
         "sleep 1.5 && wallchooser &" # Random wallpaper chooser
       ];
 

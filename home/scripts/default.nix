@@ -12,6 +12,6 @@
     ./notification
     ./system
     ./wallchooser
-    ./wallsetter
+    #./wallsetter
   ];
 }
