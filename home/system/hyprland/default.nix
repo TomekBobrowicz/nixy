@@ -67,8 +67,7 @@ in {
       exec-once = [
         "dbus-update-activation-environment --systemd --all &"
         "systemctl --user enable --now hypridle.service &"
-        "hyprpaper &"
-        "wallchooser &" # Random wallpaper chooser
+        "sleep 1.5 && wallchooser &" # Random wallpaper chooser
       ];
 
       monitor = [

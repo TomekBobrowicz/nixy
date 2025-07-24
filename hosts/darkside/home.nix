@@ -30,7 +30,7 @@
     ../../home/system/hypridle
     ../../home/system/hyprlock
     ../../home/system/hyprpanel
-    #../../home/system/hyprpaper
+    ../../home/system/hyprpaper
     ../../home/system/wofi
     ../../home/system/zathura
     ../../home/system/mime

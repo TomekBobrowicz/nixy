@@ -16,6 +16,10 @@
   # --- 2. Define the script to pick and set a random wallpaper ---
   # This script will be built into your user's path by home-manager
   randomSwwwWallpaperScript = pkgs.writeShellScriptBin "wallsetter" ''
+    #!/usr/bin/env bash
+
+    ${pkgs.swww}/bin/swww kill
+
     # --- Script Configuration (can also be passed as arguments, but defined here for simplicity) ---
     WALLPAPER_DIR="${wallpaperSourceDir}"
     TRANSITION_TYPE="wipe"        # e.g., "wipe", "grow", "fade", "outer", "simple", "random"
@@ -45,6 +49,7 @@
     fi
 
     # Set the wallpaper using swww img
+    ${pkgs.swww}/bin/swww-daemon & ${pkgs.swww}/bin/swww clear-cache
     ${pkgs.swww}/bin/swww img \
         --transition-type "$TRANSITION_TYPE" \
         --transition-duration "$TRANSITION_DURATION" \
