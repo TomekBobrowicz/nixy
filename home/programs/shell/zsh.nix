@@ -54,8 +54,8 @@ in {
       rm = "${pkgs.rmtrash}/bin/rmtrash";
       rmdir = "${pkgs.rmtrash}/bin/rmdirtrash";
 
-      fr = "nh os switch ${configDir} --hostname ${config.var.hostname}";
-      fu = "nh os switch ${configDir} --hostname ${config.var.hostname} --update";
+      fr = "nh os switch ${configDir} --hostname ${config.var.hostname} | sleep 0.5 && hyprctl reload";
+      fu = "nh os switch ${configDir} --hostname ${config.var.hostname} --update | sleep 0.5 && hyprctl reload";
 
       obsidian-no-gpu = "env ELECTRON_OZONE_PLATFORM_HINT=auto obsidian --ozone-platform=x11";
       wireguard-import = "nmcli connection import type wireguard file";
