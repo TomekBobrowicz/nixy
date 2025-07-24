@@ -11,10 +11,10 @@
       ipc = "on";
       splash = false;
       splash_offset = 2.0;
-      preload = "/home/buber/Pictures/Wallpapers/blank.png";
-      wallpaper = ",/home/buber/Pictures/Wallpapers/blank.png";
+      #preload = "/home/buber/Pictures/Wallpapers/blank.png";
+      #wallpaper = ",/home/buber/Pictures/Wallpapers/blank.png";
     };
   };
-  # systemd.user.services.hyprpaper.Unit.After =
-  #   lib.mkForce "graphical-session.target";
+  systemd.user.services.hyprpaper.Unit.After =
+    lib.mkForce "graphical-session.target";
 }

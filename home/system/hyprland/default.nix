@@ -21,7 +21,7 @@ in {
     ./bindings.nix
     ./polkitagent.nix
     #./keyboard-backlight.nix # CHANGEME: This is for my laptop only
-    ./hyprspace.nix
+    #./hyprspace.nix
   ];
 
   home.packages = with pkgs; [
@@ -68,11 +68,11 @@ in {
         "dbus-update-activation-environment --systemd --all &"
         "systemctl --user enable --now hypridle.service &"
         "systemctl --user enable --now hyprpaper.service &"
-        "sleep 0.6 && wallchooser &" # Random wallpaper chooser
+        #"sleep 0.6 && wallchooser &" # Random wallpaper chooser
       ];
 
       exec = [
-        "sleep 0.6 && wallchooser &" # Random wallpaper chooser
+        #"sleep 0.6 && wallchooser &" # Random wallpaper chooser
       ];
 
       monitor = [
