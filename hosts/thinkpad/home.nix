@@ -18,7 +18,7 @@
     ../../home/programs/nextcloud
     ../../home/programs/thunar
     ../../home/programs/lazygit
-    #../../home/programs/zen
+    ../../home/programs/zen
     ../../home/programs/discord
     ../../home/programs/anyrun
 
@@ -36,7 +36,6 @@
     ../../home/system/mime
     ../../home/system/udiskie
     ../../home/system/clipman
-    #../../home/system/stylix
 
     # ./secrets # CHANGEME: You should probably remove this line, this is where I store my secrets
   ];
