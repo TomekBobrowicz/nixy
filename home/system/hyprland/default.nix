@@ -1,6 +1,11 @@
 # So best window tiling manager
-{ pkgs, config, inputs, lib, ... }:
-let
+{
+  pkgs,
+  config,
+  inputs,
+  lib,
+  ...
+}: let
   border-size = config.theme.border-size;
   gaps-in = config.theme.gaps-in;
   gaps-out = config.theme.gaps-out;
@@ -11,12 +16,11 @@ let
   keyboardLayout = config.var.keyboardLayout;
   background = "rgb(" + config.lib.stylix.colors.base00 + ")";
 in {
-
   imports = [
     ./animations.nix
     ./bindings.nix
     ./polkitagent.nix
-    ./keyboard-backlight.nix # CHANGEME: This is for my laptop only
+    #./keyboard-backlight.nix # CHANGEME: This is for my laptop only
     ./hyprspace.nix
   ];
 
@@ -41,6 +45,7 @@ in {
     glib
     direnv
     meson
+    swww
   ];
 
   wayland.windowManager.hyprland = {
@@ -61,13 +66,13 @@ in {
 
       exec-once = [
         "dbus-update-activation-environment --systemd --all &"
-        "systemctl --user enable --now hyprpaper.service &"
         "systemctl --user enable --now hypridle.service &"
-        "systemctl --user enable --now nextcloud-client.service  &"
+        "hyprpaper &"
+        "wallchooser &" # Random wallpaper chooser
       ];
 
       monitor = [
-       # "eDP-1,preferred,0x0,1" # My internal laptop screen
+        # "eDP-1,preferred,0x0,1" # My internal laptop screen
         #"desc:AOC U34G2G1 0x00000E06,3440x1440@99.98,auto,1" # My external monitor
         #"desc:United Microelectr Corporation UMC SHARP,3840x2160,auto,2" # TV
         ",prefered,auto,1" # default
@@ -121,7 +126,10 @@ in {
           render_power = 3;
         };
         blur = {
-          enabled = if blur then "true" else "false";
+          enabled =
+            if blur
+            then "true"
+            else "false";
           size = 18;
         };
       };
@@ -132,7 +140,7 @@ in {
         mfact = 0.5;
       };
 
-      gestures = { workspace_swipe = true; };
+      gestures = {workspace_swipe = true;};
 
       misc = {
         vfr = true;
@@ -177,7 +185,7 @@ in {
         "size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$"
       ];
 
-      layerrule = [ "noanim, launcher" "noanim, ^ags-.*" ];
+      layerrule = ["noanim, launcher" "noanim, ^ags-.*"];
 
       input = {
         kb_layout = keyboardLayout;
@@ -194,7 +202,6 @@ in {
           clickfinger_behavior = true;
         };
       };
-
     };
   };
 }

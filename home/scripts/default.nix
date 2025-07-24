@@ -11,5 +11,7 @@
     ./nerdfont-fzf
     ./notification
     ./system
+    #./wallchooser
+    ./wallsetter
   ];
 }

@@ -30,12 +30,13 @@
     ../../home/system/hypridle
     ../../home/system/hyprlock
     ../../home/system/hyprpanel
-    ../../home/system/hyprpaper
+    #../../home/system/hyprpaper
     ../../home/system/wofi
     ../../home/system/zathura
     ../../home/system/mime
     ../../home/system/udiskie
     ../../home/system/clipman
+    ../../home/system/stylix
 
     # ./secrets # CHANGEME: You should probably remove this line, this is where I store my secrets
   ];

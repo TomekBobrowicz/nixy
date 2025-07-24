@@ -33,7 +33,7 @@
       open_url_with = "default";
       allow_remote_control = "yes";
       listen_on = "unix:/tmp/mykitty";
-      background_opacity = lib.mkForce 0.9;
+      background_opacity = lib.mkForce 0.8;
     };
     extraConfig = ''
       # Enable kitty's own key handling

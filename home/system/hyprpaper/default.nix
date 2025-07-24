@@ -1,5 +1,9 @@
 # Hyprpaper is used to set the wallpaper on the system
-{ lib, ... }: {
+{
+  lib,
+  config,
+  ...
+}: {
   # The wallpaper is set by stylix
   services.hyprpaper = {
     enable = true;
@@ -7,8 +11,10 @@
       ipc = "on";
       splash = false;
       splash_offset = 2.0;
+      #preload = "/home/buber/Pictures/Wallpapers/astronaut.png";
+      #wallpaper = ",/home/buber/Pictures/Wallpapers/astronaut.png";
     };
   };
-  systemd.user.services.hyprpaper.Unit.After =
-    lib.mkForce "graphical-session.target";
+  # systemd.user.services.hyprpaper.Unit.After =
+  #   lib.mkForce "graphical-session.target";
 }
