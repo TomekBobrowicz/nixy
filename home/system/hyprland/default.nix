@@ -125,15 +125,15 @@ in {
         rounding = rounding;
         shadow = {
           enabled = true;
-          range = 20;
+          range = 4;
           render_power = 3;
         };
         blur = {
-          enabled =
-            if blur
-            then "true"
-            else "false";
-          size = 18;
+          enabled = true;
+          size = 5;
+          passes = 3;
+          new_optimizations = true;
+          ignore_opacity = false;
         };
       };
 
