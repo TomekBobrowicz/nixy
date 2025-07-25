@@ -21,6 +21,7 @@
     ../../home/programs/zen
     ../../home/programs/discord
     ../../home/programs/anyrun
+    ../../home/programs/media
 
     # Scripts
     ../../home/scripts # All scripts
@@ -47,7 +48,6 @@
     packages = with pkgs; [
       # Apps
       bitwarden # Password manager
-      vlc # Video player
       blanket # White-noise app
       obsidian # Note taking app
       # planify # Todolists
@@ -57,11 +57,11 @@
       resources
       gnome-clocks
       gnome-text-editor
-      mpv # Video player
       figma-linux
       google-chrome # Web browser
       waypaper # Wallpaper manager
       hyprpaper # Wallpaper manager
+      libreoffice # Office suite
 
       # Dev
       go
