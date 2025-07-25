@@ -133,7 +133,7 @@ in {
           size = 5;
           passes = 3;
           new_optimizations = true;
-          ignore_opacity = false;
+          ignore_opacity = true;
         };
       };
 
@@ -186,6 +186,14 @@ in {
         "rounding 0, xwayland:1"
         "center, class:^(.*jetbrains.*)$, title:^(Confirm Exit|Open Project|win424|win201|splash)$"
         "size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$"
+
+        "opacity 1.0 override 0.9 override 1.0 override, class:^(discord)$"
+        "opacity 1.0 override 0.9 override 1.0 override, class:^(spotify)$"
+        "opacity 1.0 override 1.0 override 1.0 override, class:^(firefox)$"
+        "opacity 1.0 override 1.0 override 1.0 override, class:^(zen-beta)$  "
+        "opacity 1.0 override 0.9 override 1.0 override, class:^(google-chrome)$"
+        "opacity 1.0 override 0.9 override 1.0 override, class:^(code)$"
+        "opacity 1.0 override 0.9 override 1.0 override, class:^(thunar)$"
       ];
 
       layerrule = ["noanim, launcher" "noanim, ^ags-.*"];
