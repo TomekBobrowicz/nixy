@@ -7,9 +7,16 @@
   imports = [
     inputs.zen-browser.homeModules.beta
   ];
+  stylix.targets.zen-browser.profileNames = ["Profile0"];
 
   programs.zen-browser = {
     enable = true;
+    profiles = {
+      Profile0 = {
+        # bookmarks, extensions, search engines...
+      };
+    };
+
     policies = {
       DisableAppUpdate = true;
       DisableTelemetry = true;
