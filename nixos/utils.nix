@@ -122,6 +122,8 @@ in {
     alejandra
     nixd
     nix-output-monitor
+    nix-init
+    nix-prefetch-scripts
     nvd
     (callPackage ../packages/hourglass {})
   ];
