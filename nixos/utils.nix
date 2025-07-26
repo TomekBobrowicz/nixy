@@ -125,6 +125,8 @@ in {
     nix-init
     nix-prefetch-scripts
     nvd
+    go
+    comma
     (callPackage ../packages/hourglass {})
   ];
 
