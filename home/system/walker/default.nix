@@ -9,12 +9,12 @@
 
   wayland.windowManager.hyprland.settings = {
     bindd = [
-      # "SUPER, R, Walker, exec, walker"
-      # "SUPER, PERIOD, Emoji Picker, exec, walker -m emojis"
-      # "SUPERSHIFT, PERIOD, Emoji Picker, exec, walker -m symbols"
+      "SUPER, R, Walker, exec, walker"
+      "SUPER, PERIOD, Emoji Picker, exec, walker -m emojis"
+      "SUPERSHIFT, PERIOD, Emoji Picker, exec, walker -m symbols"
       # "SUPER, M, Launch Minecraft Instance, exec, walker -m minecraft"
-      # "SUPER, V, Open Clipboard, exec, walker -m clipboard"
-      # "SUPERSHIFT, V, Clear Clipboard, exec, walker --clear-clipboard"
+      "SUPER, V, Open Clipboard, exec, walker -m clipboard"
+      "SUPERSHIFT, V, Clear Clipboard, exec, walker --clear-clipboard"
     ];
   };
 

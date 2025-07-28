@@ -36,8 +36,8 @@
     ../../home/system/zathura
     ../../home/system/mime
     ../../home/system/udiskie
-    ../../home/system/walker
-    #../../home/system/clipman
+    #../../home/system/walker
+    ../../home/system/clipman
 
     # ./secrets # CHANGEME: You should probably remove this line, this is where I store my secrets
   ];
