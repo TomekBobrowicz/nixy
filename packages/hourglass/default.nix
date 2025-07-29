@@ -5,16 +5,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "hourglass";
-  version = "1.3.3";
+  version = "1.3.4";
 
   src = fetchFromGitLab {
     owner = "alxhr0";
     repo = "hourglass";
     rev = version;
-    hash = "sha256-cPGZ+ZgxnDFDPWRknzunf7+RiC/r6ATstoqnCsS4Tqk=";
+    hash = "sha256-BBkluS9hsNRh1/weXBJbzwjL8y2GvUHRqZKHqN52bo4=";
   };
 
-  cargoHash = "sha256-Zvg7IsjpobklQdgPDBWeDjExjksCCSIfH6rAAQXQvC0=";
+  cargoHash = "sha256-4SB6gBNOsImHYDDqv39+G9fdiwCtjXUHXIa4ylYDvlE=";
 
   meta = {
     description = "";

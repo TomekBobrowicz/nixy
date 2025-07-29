@@ -18,7 +18,7 @@
     ../../home/programs/nextcloud
     ../../home/programs/thunar
     ../../home/programs/lazygit
-    ../../home/programs/zen
+    #../../home/programs/zen
     ../../home/programs/discord
     ../../home/programs/anyrun
     ../../home/programs/media
