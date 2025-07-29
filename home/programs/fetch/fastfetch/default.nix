@@ -14,8 +14,8 @@
       logo = {
         source = ./nixos.png;
         type = "kitty-direct";
-        height = 10;
-        width = 20;
+        height = 7;
+        width = 16;
         padding = {
           top = 2;
           left = 2;
@@ -27,109 +27,99 @@
         {
           type = "os";
           key = "OS  ";
-          keyColor = "32";
+          keyColor = "yellow";
         }
         {
           type = "kernel";
           key = " ├  ";
-          keyColor = "32";
+          keyColor = "yellow";
         }
         {
           type = "packages";
           key = " ├ 󰏖 ";
-          keyColor = "32";
+          keyColor = "yellow";
         }
         {
           type = "command";
           key = " ├  ";
-          keyColor = "32";
+          keyColor = "yellow";
           text = "hourglass";
         }
         {
           type = "shell";
           key = " └  ";
-          keyColor = "32";
+          keyColor = "yellow";
         }
         "break"
         {
           type = "wm";
           key = "WM   ";
-          keyColor = "32";
+          keyColor = "blue";
         }
         {
           type = "wmtheme";
           key = " ├ 󰉼 ";
-          keyColor = "32";
+          keyColor = "blue";
         }
         {
           type = "icons";
           key = " ├ 󰀻 ";
-          keyColor = "32";
+          keyColor = "blue";
         }
         {
           type = "cursor";
           key = " ├  ";
-          keyColor = "32";
+          keyColor = "blue";
         }
         {
           type = "terminal";
           key = " ├  ";
-          keyColor = "32";
+          keyColor = "blue";
         }
         {
           type = "terminalfont";
           key = " └  ";
-          keyColor = "32";
+          keyColor = "blue";
         }
         "break"
         {
           type = "host";
           format = "{5} {1} Type {2}";
           key = "PC   ";
-          keyColor = "32";
+          keyColor = "green";
         }
         {
           type = "cpu";
           format = "{1} ({3}) @ {7} GHz";
           key = " ├  ";
-          keyColor = "32";
+          keyColor = "green";
         }
         {
           type = "gpu";
           format = "{1} {2} @ {12} GHz";
           key = " ├ 󰢮 ";
-          keyColor = "32";
+          keyColor = "green";
         }
         {
           type = "memory";
           key = " ├  ";
-          keyColor = "32";
+          keyColor = "green";
         }
         {
           type = "disk";
           key = " ├ 󰋊 ";
-          keyColor = "32";
+          keyColor = "green";
         }
         {
           type = "monitor";
-          key = " ├  ";
-          keyColor = "32";
-        }
-        {
-          type = "player";
-          key = " ├ 󰥠 ";
-          keyColor = "32";
-        }
-        {
-          type = "media";
-          key = " └ 󰝚 ";
-          keyColor = "32";
+          key = " └  ";
+          keyColor = "green";
         }
         "break"
         {
           type = "uptime";
           key = "   Uptime   ";
-          keyColor = "32";
+          keyColor = "magenta";
         }
       ];
     };
