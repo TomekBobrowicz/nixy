@@ -16,6 +16,7 @@
         "$shiftMod,SPACE, exec, hyprfocus-toggle" # Toggle HyprFocus
         "$mod ALT, W, exec,waypaper --random --folder ~/Pictures/Wallpapers" # Random wallpaper chooser
         "$mod, R, exec, anyrun" # Anyrun
+        "$mod, V, exec, code" # Visual Studio Code
         # "$mod,P, exec,  uwsm app -- ${pkgs.planify}/bin/io.github.alainm23.planify" # Planify
 
         "$mod,Q, killactive," # Close window
