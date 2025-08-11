@@ -71,7 +71,4 @@ in {
   };
 
   environment.systemPackages = [sddm-astronaut];
-
-  # To prevent getting stuck at shutdown
-  systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 }
