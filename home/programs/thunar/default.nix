@@ -74,4 +74,30 @@ in {
     remove_files=false
   '';
   */
+  xdg.configFile."Thunar/uca.xml".text = ''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <actions>
+    <action>
+        <icon>utilities-terminal</icon>
+        <name>Open Terminal Here</name>
+        <unique-id>1700000000000001</unique-id>
+        <command>kitty -d %f</command>
+        <description>Opens Kitty terminal in the selected folder</description>
+        <patterns>*</patterns>
+        <startup-notify/>
+        <directories/>
+    </action>
+    <action>
+        <icon></icon>
+        <name>Extract here</name>
+        <submenu></submenu>
+        <unique-id>1689618425925956-3</unique-id>
+        <command>xarchiver -x . %f</command>
+        <description>Extracts the archive into the directory it is located in.</description>
+        <range>*</range>
+        <patterns>*.tar.bz2;*.tar.gz;*.tar.xz;*.tar.Z;*.tar;*.taz;*.tb2;*.tbz;*.tbz2;*.tgz;*.txz;*.zip;*.bz2;*.docx;*.apk;*.gz;*.odt;</patterns>
+        <other-files/>
+    </action>
+    </actions>
+  '';
 }

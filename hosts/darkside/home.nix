@@ -20,7 +20,7 @@
     ../../home/programs/lazygit
     #../../home/programs/zen
     ../../home/programs/discord
-    ../../home/programs/anyrun
+    #../../home/programs/anyrun
     ../../home/programs/media
 
     # Scripts

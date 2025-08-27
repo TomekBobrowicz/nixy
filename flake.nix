@@ -42,10 +42,12 @@
     */
     search-nixos-api.url = "github:anotherhadi/search-nixos-api";
 
-    walker = {
+    /*
+      walker = {
       url = "github:abenz1267/walker";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    */
   };
 
   outputs = inputs @ {nixpkgs, ...}: {
