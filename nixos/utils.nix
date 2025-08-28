@@ -128,7 +128,7 @@ in {
     nurl
     go
     comma
-    (callPackage ../packages/hourglass {})
+    #(callPackage ../packages/hourglass {})
   ];
 
   xdg.portal = {
