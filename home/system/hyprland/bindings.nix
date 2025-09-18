@@ -2,7 +2,7 @@
   wayland.windowManager.hyprland.settings = {
     bind =
       [
-        "$mod,RETURN, exec, uwsm app -- ${pkgs.kitty}/bin/kitty" # Kitty
+        "$mod,RETURN, exec, ${pkgs.kitty}/bin/kitty" # Kitty
         "$mod,E, exec,  uwsm app -- ${pkgs.xfce.thunar}/bin/thunar" # Thunar
         #"$mod,B, exec,  uwsm app -- zen-beta" # Zen Browser
         "$mod, B, exec,  uwsm app -- google-chrome-stable" # Zen Browser
