@@ -26,8 +26,8 @@ in {
     extraOptions = ''
       warn-dirty = false
     '';
+
     settings = {
-      access-tokens = "github.com=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";
       download-buffer-size = 262144000; # 250 MB (250 * 1024 * 1024)
       auto-optimise-store = true;
       experimental-features = ["nix-command" "flakes"];
