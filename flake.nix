@@ -35,6 +35,14 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dankMaterialShell = {
+      url = "github:AvengeMedia/DankMaterialShell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     /*
       hyprspace = {
       url = "github:KZDKM/Hyprspace";
@@ -63,7 +71,6 @@
             }
             inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen1 # CHANGEME: check https://github.com/NixOS/nixos-hardware
             inputs.home-manager.nixosModules.home-manager
-            inputs.stylix.nixosModules.stylix
             ./hosts/thinkpad/configuration.nix # CHANGEME: change the path to match your host folder
           ];
         };

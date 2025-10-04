@@ -65,9 +65,11 @@ in {
 
       exec-once = [
         "dbus-update-activation-environment --systemd --all &"
-        "systemctl --user enable --now hypridle.service &"
+        #"systemctl --user enable --now hypridle.service &"
         "systemctl --user enable --now hyprpaper.service &"
         "waypaper --restore --folder ~/Pictures/Wallpapers &"
+        "bash -c 'wl-paste --watch cliphist store &'"
+        "dms run &"
       ];
 
       exec = [

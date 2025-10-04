@@ -35,7 +35,7 @@ in {
   wayland.windowManager.hyprland.settings.exec-once = ["hyprpanel"];
 
   programs.hyprpanel = {
-    enable = true;
+    enable = false;
 
     settings = {
       layout = {

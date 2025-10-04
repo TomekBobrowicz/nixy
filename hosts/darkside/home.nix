@@ -1,6 +1,7 @@
 {
   pkgs,
   config,
+  inputs,
   ...
 }: {
   imports = [
@@ -28,9 +29,9 @@
 
     # System (Desktop environment like stuff)
     ../../home/system/hyprland
-    ../../home/system/hypridle
-    ../../home/system/hyprlock
-    ../../home/system/hyprpanel
+    #../../home/system/hypridle
+    #../../home/system/hyprlock
+    #../../home/system/hyprpanel
     ../../home/system/hyprpaper
     ../../home/system/wofi
     ../../home/system/zathura
@@ -38,6 +39,10 @@
     ../../home/system/udiskie
     #../../home/system/walker
     ../../home/system/clipman
+
+    inputs.dankMaterialShell.homeModules.dankMaterialShell.default
+    inputs.dankMaterialShell.homeModules.dankMaterialShell.niri
+    inputs.niri.homeModules.niri
 
     # ./secrets # CHANGEME: You should probably remove this line, this is where I store my secrets
   ];
@@ -102,4 +107,5 @@
   };
 
   programs.home-manager.enable = true;
+  programs.dankMaterialShell.enable = true;
 }

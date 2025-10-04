@@ -7,7 +7,8 @@
         #"$mod,B, exec,  uwsm app -- zen-beta" # Zen Browser
         "$mod, B, exec,  uwsm app -- google-chrome-stable" # Zen Browser
         "$mod,K, exec,  uwsm app -- ${pkgs.bitwarden}/bin/bitwarden" # Bitwarden
-        "$mod,L, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
+        #"$mod,L, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
+        "$mod,L, exec,  dms ipc call lock lock"
         "$mod,X, exec, powermenu" # Powermenu
         "$mod,SPACE, exec, menu" # Launcher
         "$mod,C, exec, quickmenu" # Quickmenu
