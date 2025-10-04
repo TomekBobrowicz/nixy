@@ -71,6 +71,7 @@
             }
             inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen1 # CHANGEME: check https://github.com/NixOS/nixos-hardware
             inputs.home-manager.nixosModules.home-manager
+            inputs.stylix.nixosModules.stylix
             ./hosts/thinkpad/configuration.nix # CHANGEME: change the path to match your host folder
           ];
         };

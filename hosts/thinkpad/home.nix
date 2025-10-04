@@ -1,6 +1,7 @@
 {
   pkgs,
   config,
+  inputs,
   ...
 }: {
   imports = [
@@ -106,4 +107,5 @@
   };
 
   programs.home-manager.enable = true;
+  programs.dankMaterialShell.enable = true;
 }
