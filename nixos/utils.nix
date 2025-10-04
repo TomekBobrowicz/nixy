@@ -60,6 +60,7 @@ in {
       openFirewall = true;
     };
     ipp-usb.enable = true;
+    flatpak.enable = true;
   };
 
   console.keyMap = keyboardLayout;
@@ -70,7 +71,7 @@ in {
     EDITOR = "nvim";
     TERMINAL = "kitty";
     TERM = "kitty";
-    BROWSER = "zen-beta";
+    BROWSER = "google-chrome";
     NH_OS_FLAKE = "${configDir}";
   };
 
