@@ -22,10 +22,10 @@ in {
       spawn-at-startup = [
         {command = ["wl-paste" "--watch" "cliphist" "store"];}
         {command = ["wl-paste" "--type text" "--watch" "cliphist" "store"];}
-        {command = ["qs" "-c" "DankMaterialShell"];}
+        {command = ["dms run"];}
       ];
       input = {
-        keyboard.xkb.layout = "latam";
+        keyboard.xkb.layout = "pl";
 
         touchpad = {
           click-method = "button-areas";
@@ -62,8 +62,8 @@ in {
           };
           scale = 1.0;
           position = {
-            x = 0;
-            y = -1080;
+            x = 1920;
+            y = 0;
           };
         };
       };

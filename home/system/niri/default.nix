@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{pkgs, inputs,...}:
 # Wayland config
 {
   imports = [
@@ -6,6 +6,7 @@
     ./settings.nix
     ./binds.nix
     ./rules.nix
+    ./quickshell.nix
   ];
 
   home.packages = with pkgs; [
@@ -20,7 +21,7 @@
   # make stuff work on wayland
   home.sessionVariables = {
     QT_QPA_PLATFORM = "wayland";
-    QT_QPA_PLATFORMTHEME = "gtk3";
+    #QT_QPA_PLATFORMTHEME = "gtk3";
     SDL_VIDEODRIVER = "wayland";
     XDG_SESSION_TYPE = "wayland";
   };

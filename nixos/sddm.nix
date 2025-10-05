@@ -63,8 +63,9 @@ in {
       settings = {
         /*
         Wayland.SessionDir = "${
-          inputs.hyprland.packages."${pkgs.system}".hyprland
-        }/share/wayland-sessions";
+          # inputs.hyprland.packages."${pkgs.system}".hyprland
+          inputs.niri.packages."${pkgs.system}".niri
+        }share/wayland-sessions";
         */
       };
     };
