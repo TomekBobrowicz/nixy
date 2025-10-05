@@ -43,6 +43,12 @@
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/quickshell/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    mynixpkgs.url = "github:linuxmobile/mynixpkgs";
+
     /*
       hyprspace = {
       url = "github:KZDKM/Hyprspace";
