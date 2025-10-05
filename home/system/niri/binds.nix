@@ -163,7 +163,7 @@
     "Mod+S".action = switch-preset-column-width;
     "Mod+F".action = maximize-column;
     "Mod+L".action = spawn ["dms" "ipc" "call" "lock" "lock"];
-    "Mod+W".action = spawn ["waypaper"];
+    "Mod+W".action = spawn ["wallsetter"];
     "Mod+E".action = spawn ["${pkgs.xfce.thunar}/bin/thunar"];
     "Mod+B".action = spawn ["google-chrome-stable"];
 

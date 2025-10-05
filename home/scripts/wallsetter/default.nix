@@ -50,11 +50,8 @@
 
     # Set the wallpaper using swww img
     ${pkgs.swww}/bin/swww-daemon & ${pkgs.swww}/bin/swww clear-cache
-    ${pkgs.swww}/bin/swww img \
-        --transition-type "$TRANSITION_TYPE" \
-        --transition-duration "$TRANSITION_DURATION" \
-        --transition-fps "$TRANSITION_FPS" \
-        "$RANDOM_WALLPAPER"
+    ${pkgs.swww}/bin/swww img "$RANDOM_WALLPAPER"
+      
 
     echo "Set wallpaper: $RANDOM_WALLPAPER with transition type: $TRANSITION_TYPE"
   '';

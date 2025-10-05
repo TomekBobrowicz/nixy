@@ -27,6 +27,7 @@ in {
         {command = ["dbus-update-activation-environment" "--all"];}
         {command =["${pkgs.xwayland-satellite}/bin/xwayland-satellite"];}
         {command =["${pkgs.xdg-desktop-portal-gnome}/libexec/xdg-desktop-portal-gnome"];}
+        {command = ["${pkgs.swww}/bin/swww-daemon"];}
         {command = ["dms" "run"];}
       ];
       input = {

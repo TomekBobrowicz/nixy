@@ -17,6 +17,7 @@
     # screenshot
     grim
     slurp
+    swww
 
     # utils
     wl-clipboard
