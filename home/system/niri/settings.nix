@@ -22,6 +22,11 @@ in {
       spawn-at-startup = [
         {command = ["wl-paste" "--watch" "cliphist" "store"];}
         {command = ["wl-paste" "--type text" "--watch" "cliphist" "store"];}
+        {command = ["dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"];}
+        {command = ["systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"];}
+        {command = ["dbus-update-activation-environment" "--all"];}
+        {command =["${pkgs.xwayland-satellite}/bin/xwayland-satellite"];}
+        {command =["${pkgs.xdg-desktop-portal-gnome}/libexec/xdg-desktop-portal-gnome"];}
         {command = ["dms" "run"];}
       ];
       input = {
