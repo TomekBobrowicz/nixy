@@ -11,7 +11,7 @@ in {
       quickshell
     ]
     ++ [
-      inputs.mynixpkgs.packages.${pkgs.system}.dgop
+      #inputs.mynixpkgs.packages.${pkgs.system}.dgop
       accountsservice
       brightnessctl
       cava

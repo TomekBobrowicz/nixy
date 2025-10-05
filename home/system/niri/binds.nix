@@ -14,9 +14,7 @@
     "XF86AudioMute" = {
       allow-when-locked = true;
       action.spawn = [
-        "qs"
-        "-c"
-        "DankMaterialShell"
+        "dms"
         "ipc"
         "call"
         "audio"
@@ -26,9 +24,7 @@
     "XF86AudioMicMute" = {
       allow-when-locked = true;
       action.spawn = [
-        "qs"
-        "-c"
-        "DankMaterialShell"
+        "dms"
         "ipc"
         "call"
         "audio"
@@ -39,9 +35,7 @@
     "XF86AudioRaiseVolume" = {
       allow-when-locked = true;
       action.spawn = [
-        "qs"
-        "-c"
-        "DankMaterialShell"
+        "dms"
         "ipc"
         "call"
         "audio"
@@ -52,9 +46,7 @@
     "XF86AudioLowerVolume" = {
       allow-when-locked = true;
       action.spawn = [
-        "qs"
-        "-c"
-        "DankMaterialShell"
+        "dms"
         "ipc"
         "call"
         "audio"
@@ -66,9 +58,7 @@
     "XF86MonBrightnessUp" = {
       allow-when-locked = true;
       action.spawn = [
-        "qs"
-        "-c"
-        "DankMaterialShell"
+        "dms"
         "ipc"
         "call"
         "brightness"
@@ -81,9 +71,7 @@
     "XF86MonBrightnessDown" = {
       allow-when-locked = true;
       action.spawn = [
-        "qs"
-        "-c"
-        "DankMaterialShell"
+        "dms"
         "ipc"
         "call"
         "brightness"
@@ -93,10 +81,8 @@
       ];
     };
 
-    "Ctrl+Alt+L".action = spawn [
-      "qs"
-      "-c"
-      "DankMaterialShell"
+    "Super+Alt+L".action = spawn [
+      "dms"
       "ipc"
       "call"
       "lock"
@@ -104,29 +90,47 @@
     ];
 
     "Mod+V".action = spawn [
-      "qs"
-      "-c"
-      "DankMaterialShell"
+      "dms"
       "ipc"
       "call"
       "clipboard"
       "toggle"
     ];
 
+    "Mod+P".action = spawn [
+      "dms"
+      "ipc"
+      "call"
+      "notepad"
+      "toggle"
+    ];
+
     "Mod+U".action = spawn [
-      "qs"
-      "-c"
-      "DankMaterialShell"
+      "dms"
       "ipc"
       "call"
       "settings"
       "toggle"
     ];
 
+      "Mod+X".action = spawn [
+      "dms"
+      "ipc"
+      "call"
+      "powermenu"
+      "toggle"
+    ];
+
+      "Mod+Shift+C".action = spawn [
+      "dms"
+      "ipc"
+      "call"
+      "control-center"
+      "toggle"
+    ];
+
     "Mod+M".action = spawn [
-      "qs"
-      "-c"
-      "DankMaterialShell"
+      "dms"
       "ipc"
       "call"
       "processlist"
@@ -134,9 +138,7 @@
     ];
 
     "Alt+Space".action = spawn [
-      "qs"
-      "-c"
-      "DankMaterialShell"
+      "dms"
       "ipc"
       "call"
       "spotlight"
@@ -144,9 +146,7 @@
     ];
 
     "Mod+D".action = spawn [
-      "qs"
-      "-c"
-      "DankMaterialShell"
+      "dms"
       "ipc"
       "call"
       "spotlight"
@@ -156,7 +156,7 @@
     "Print".action.screenshot-screen = {write-to-disk = true;};
     "Mod+Shift+Alt+S".action = screenshot-window;
     "Mod+Shift+S".action.screenshot = {show-pointer = false;};
-    "Mod+Return".action = spawn "${pkgs.ghostty}/bin/ghostty";
+    "Mod+Return".action = spawn "${pkgs.kitty}/bin/kitty";
 
     "Mod+Q".action = close-window;
     "Mod+S".action = switch-preset-column-width;

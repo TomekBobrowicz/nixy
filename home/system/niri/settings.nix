@@ -6,7 +6,7 @@
   pointer = config.stylix.cursor;
 in {
   programs.niri = with config.lib.stylix.colors; {
-    enable = true;
+    #enable = true;
     package = pkgs.niri;
     settings = {
       environment = {
@@ -22,7 +22,7 @@ in {
       spawn-at-startup = [
         {command = ["wl-paste" "--watch" "cliphist" "store"];}
         {command = ["wl-paste" "--type text" "--watch" "cliphist" "store"];}
-        {command = ["dms run"];}
+        {command = ["dms" "run"];}
       ];
       input = {
         keyboard.xkb.layout = "pl";

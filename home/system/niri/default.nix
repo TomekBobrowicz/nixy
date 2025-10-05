@@ -1,4 +1,8 @@
-{pkgs, inputs,...}:
+{
+  pkgs,
+  inputs,
+  ...
+}:
 # Wayland config
 {
   imports = [
@@ -6,7 +10,7 @@
     ./settings.nix
     ./binds.nix
     ./rules.nix
-    ./quickshell.nix
+    #./quickshell.nix
   ];
 
   home.packages = with pkgs; [
@@ -16,6 +20,15 @@
 
     # utils
     wl-clipboard
+
+    #fonts
+    fira-code-symbols
+    material-symbols
+    inter
+
+    xwayland-satellite
+    mate.mate-polkit
+    hyprpicker
   ];
 
   # make stuff work on wayland
