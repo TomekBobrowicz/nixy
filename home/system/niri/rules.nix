@@ -51,7 +51,7 @@ _: let
       matches = [
         {app-id = "zen";}
         {app-id = "firefox";}
-        {app-id = "chromium-browser";}
+        {app-id = "google-chrome";}
         {app-id = "xdg-desktop-portal-gtk";}
       ];
       scroll-factor = 0.5;
@@ -60,8 +60,9 @@ _: let
       matches = [
         {app-id = "zen";}
         {app-id = "firefox";}
-        {app-id = "chromium-browser";}
+        {app-id = "google-chrome";}
         {app-id = "edge";}
+        {app-id = "vesktop";}
       ];
       open-maximized = true;
     }

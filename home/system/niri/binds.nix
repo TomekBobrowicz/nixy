@@ -164,8 +164,8 @@
     "Mod+F".action = maximize-column;
     "Mod+L".action = spawn ["dms" "ipc" "call" "lock" "lock"];
     "Mod+W".action = spawn ["waypaper"];
-    "Mod+E".action = spawn ["xdg-open" "${pkgs.xfce.thunar}/bin/thunar"];
-    "Mod+B".action = spawn ["xdg-open" "google-chrome-stable"];
+    "Mod+E".action = spawn ["${pkgs.xfce.thunar}/bin/thunar"];
+    "Mod+B".action = spawn ["google-chrome-stable"];
 
     "Mod+WheelScrollDown".action = focus-workspace-down;
     "Mod+WheelScrollUp".action = focus-workspace-up;
