@@ -68,6 +68,7 @@
       waypaper # Wallpaper manager
       hyprpaper # Wallpaper manager
       libreoffice # Office suite
+      vesktop # Discord desktop app
 
       # Dev
       go
